@@ -31,13 +31,13 @@ const Projects = () => (
         </p>
         <ul className='panel__list'>
             <li className='panel__list--item contact-link'>
-                <a href='http://www.peppermintalpacas.co.uk'>Peppermint Alpacas</a>
+                <a href='http://www.peppermintalpacas.co.uk'>Peppermint <span className='highlight'>Alpacas</span></a>
             </li>
             <li className='panel__list--item contact-link'>
-                <a href='http://www.joulesgroup.com/'>Joules Group</a>
+                <a href='http://www.joulesgroup.com/'><span className='highlight'>Joules</span> Group</a>
             </li>
             <li className='panel__list--item contact-link'>
-                <a href='http://www.digitalmortgages.net'>Atom Bank Digital Mortgages</a>
+                <a href='http://www.digitalmortgages.net'>Atom <span className='highlight'>Bank</span> Digital <span className='highlight'>Mortgages</span></a>
             </li>
         </ul>
     </div>

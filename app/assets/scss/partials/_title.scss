@@ -1,9 +1,8 @@
 .title {
-    background: $light;
-    background: -webkit-linear-gradient(top, $dark, $light);
-    background: -moz-linear-gradient(top, $dark, $light);
-    background: -o-linear-gradient(top, $dark, $light);
-    background: linear-gradient(to bottom, $dark, $light);
+    background: -webkit-linear-gradient(bottom, $gradient);
+    background: -moz-linear-gradient(bottom, $gradient);
+    background: -o-linear-gradient(bottom, $gradient);
+    background: linear-gradient(to top, $gradient);
     position: relative;
     min-height: 300px;
 

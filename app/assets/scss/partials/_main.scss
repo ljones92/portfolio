@@ -2,3 +2,13 @@ body {
     background: $light;
     font-family: 'Expletus Sans', cursive;
 }
+
+span.highlight {
+    color: $highlight;
+}
+
+a:hover {
+    span.highlight {
+        color: $dark;
+    }
+}
