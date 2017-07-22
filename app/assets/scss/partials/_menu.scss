@@ -1,0 +1,35 @@
+.main-menu {
+    background: transparent;
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 2s;
+
+    &__scrolling {
+        background: $dark;
+    }
+
+    &__list {
+        display: flex;
+        &--item {
+            padding: 0 20px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 17px;
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                    border-top:2px solid transparent;
+                }
+            }
+        }
+    }
+}

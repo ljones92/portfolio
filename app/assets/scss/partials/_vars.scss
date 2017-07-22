@@ -1,0 +1,18 @@
+$dark: #274046;
+$light: #e6dada;
+
+$break-small: "(min-width: 480px)";
+$break-mobile: "(min-width: 700px)";
+$break-medium: "(min-width: 900px)";
+$break-large: "(min-width: 1000px)";
+$break-ex-large: "(min-width: 1200px)";
+$break-ex-ex-large: "(min-width: 1500px)";
+
+$breakpoints: (
+    break-small : $break-small,
+    break-mobile: $break-mobile,
+    break-medium: $break-medium,
+    break-large : $break-large,
+    break-ex-large : $break-ex-large,
+    break-ex-ex-large : $break-ex-ex-large,
+);

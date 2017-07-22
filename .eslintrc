@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "es6": true,
+    "classes": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "jsx-quotes": [2, "prefer-single"],
+    "react/forbid-prop-types": 0,
+    "react/jsx-indent": [2, 4],
+    "react/jsx-filename-extension": 0
+  }
+}

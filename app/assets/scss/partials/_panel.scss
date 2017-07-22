@@ -1,0 +1,109 @@
+.panel {
+    text-align: center;
+    margin: 80px 0;
+    padding: 0 20px;
+    max-width: 100%;
+    @media #{$break-mobile} {
+        max-width: 80%;
+        margin: 100px auto;
+    }
+    @media #{$break-large} {
+        max-width: 1000px;
+        margin: 100px auto;
+    }
+    &__title {
+        color: $dark;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    &__body {
+        margin-top: 30px;
+        font-size: 17px;
+        line-height: 2;
+    }
+    &__list {
+        list-style-type: disc;
+        line-height: 2;
+        list-style-position: inside;
+
+        &--2 {
+            margin-top: 20px;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            columns: 2;
+        }
+    }
+
+    &__image {
+        max-width: 400px;
+        margin: 40px auto 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > div {
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+        }
+    }
+}
+
+.contact-email {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 2px solid $dark;
+        }
+    }
+    @media #{$break-small} {
+        font-size: 30px;
+        font-weight: normal;
+        a {
+            &:hover {
+                border-bottom: 3px solid $dark;
+            }
+        }
+    }
+    @media #{$break-medium} {
+        font-size: 50px;
+        font-weight: normal;
+        a {
+            &:hover {
+                border-bottom: 5px solid $dark;
+            }
+        }
+    }
+}
+
+.contact-link {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 2px solid $dark;
+        }
+    }
+    @media #{$break-small} {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    @media #{$break-medium} {
+        font-size: 28px;
+        font-weight: normal;
+    }
+}

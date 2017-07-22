@@ -1,0 +1,37 @@
+.title {
+    background: $light;
+    background: -webkit-linear-gradient(top, $dark, $light);
+    background: -moz-linear-gradient(top, $dark, $light);
+    background: -o-linear-gradient(top, $dark, $light);
+    background: linear-gradient(to bottom, $dark, $light);
+    position: relative;
+    min-height: 300px;
+
+    &__heading {
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        font-size: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        @media #{$break-mobile} {
+            font-size: 60px;
+        }
+        @media #{$break-large} {
+            font-size: 80px;
+        }
+        span {
+            display: block;
+            font-size: 25px;
+            margin-top: 10px;
+            @media #{$break-mobile} {
+                font-size: 30px;
+            }
+            @media #{$break-large} {
+                font-size: 40px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
