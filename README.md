@@ -1,4 +1,4 @@
-## Portfolio
+# Portfolio
 
 ### Run locally
 Run `npm install` and `npm run`.
