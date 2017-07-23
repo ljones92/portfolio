@@ -5,6 +5,8 @@
     background: linear-gradient(to top, $gradient);
     position: relative;
     min-height: 300px;
+    max-height: 800px;
+    overflow: hidden;
 
     &__heading {
         color: #fff;
