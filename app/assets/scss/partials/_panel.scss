@@ -11,21 +11,33 @@
         max-width: 1000px;
         margin: 100px auto;
     }
+    @media #{$break-ex-ex-large} {
+        max-width: 70%;
+    }
     &__title {
         color: $dark;
         font-size: 40px;
         text-decoration: underline;
+        @media #{$break-ex-ex-large} {
+            font-size: 2.2vw;
+        }
     }
     &__body {
         color: $dark;
         margin-top: 30px;
         font-size: 17px;
         line-height: 2;
+        @media #{$break-ex-ex-large} {
+            font-size: 1vw;
+        }
     }
     &__list {
         list-style-type: disc;
         line-height: 2;
         list-style-position: inside;
+        @media #{$break-ex-ex-large} {
+            font-size: 1vw;
+        }
 
         &--2 {
             margin-top: 20px;
@@ -46,6 +58,9 @@
         margin: 40px auto 0 auto;
         img {
             width: 100%;
+        }
+        @media #{$break-ex-ex-large} {
+            max-width: 20vw;
         }
     }
 
@@ -94,6 +109,16 @@
             }
         }
     }
+    @media #{$break-ex-ex-large} {
+        font-size: 2vw;
+        font-weight: normal;
+        a {
+            &:hover {
+                color: $highlight;
+                border-bottom: 5px solid $highlight;
+            }
+        }
+    }
 }
 
 .contact-link {
@@ -115,6 +140,10 @@
     }
     @media #{$break-medium} {
         font-size: 28px;
+        font-weight: normal;
+    }
+    @media #{$break-ex-ex-large} {
+        font-size: 1.4vw;
         font-weight: normal;
     }
 }

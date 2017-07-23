@@ -6,7 +6,6 @@
     z-index: 1;
     color: #fff;
     display: flex;
-    height: 50px;
     align-items: center;
     justify-content: center;
     transition: background-color 2s;
@@ -17,6 +16,7 @@
     }
 
     &__list {
+        padding: 20px 0;
         display: flex;
         &--item {
             padding: 0 20px;
@@ -29,6 +29,9 @@
                 &:hover {
                     border-bottom: 2px solid #fff;
                     border-top:2px solid transparent;
+                }
+                @media #{$break-ex-ex-large} {
+                    font-size: 1vw;
                 }
             }
         }
