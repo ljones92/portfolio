@@ -6,9 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline --history-api-fallback",
     "lint": "eslint --ext .jsx,.js app/",
-    "test": "mocha --compilers js:babel-core/register --recursive",
-    "test:coverage": "babel-node ./node_modules/.bin/babel-istanbul cover _mocha -- --recursive",
-    "test:coveralls": "babel-node ./node_modules/.bin/babel-istanbul cover _mocha --report lcovonly -- --recursive -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test": "mocha --compilers js:babel-core/register --recursive --require ignore-styles",
+    "test:coverage": "babel-node ./node_modules/.bin/babel-istanbul cover _mocha -- --recursive --require ignore-styles",
+    "test:coveralls": "babel-node ./node_modules/.bin/babel-istanbul cover _mocha --report lcovonly -- --recursive -R spec --require ignore-styles && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "prod": "webpack -p"
   },
   "devDependencies": {
@@ -39,6 +39,7 @@
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
     "husky": "^0.13.3",
+    "ignore-styles": "^5.0.1",
     "image-webpack-loader": "^3.3.1",
     "jsdom": "11.1.0",
     "jsdom-global": "3.0.2",

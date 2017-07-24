@@ -1,11 +1,11 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import Contact from '../../app/views/Contact';
+import About from '../../app/views/About';
 
-describe('View: Contact', () => {
+describe('View: About', () => {
   it('Renders component', () => {
-    const wrapper = shallow(<Contact />);
+    const wrapper = shallow(<About />);
     expect(
       wrapper.length,
     ).to.equal(1);
