@@ -20,11 +20,8 @@ class Menu extends Component {
 
   handleScroll() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > 100) {
-      this.setState({ scrolling: true });
-    } else {
-      this.setState({ scrolling: false });
-    }
+    const scrolling = scrollTop > 100;
+    this.setState({ scrolling });
   }
 
   render() {
