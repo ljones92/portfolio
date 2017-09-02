@@ -1,11 +1,12 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-var CriticalPlugin = require('webpack-plugin-critical').CriticalPlugin;
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const CriticalPlugin = require('webpack-plugin-critical').CriticalPlugin;
+const ManifestPlugin = require('webpack-manifest-plugin');
 
-let extractStyles = new ExtractTextPlugin('[contenthash].css');
+const extractStyles = new ExtractTextPlugin('[contenthash].css');
 
 module.exports = {
     context: path.resolve(__dirname, './app'),
@@ -64,6 +65,7 @@ module.exports = {
         inline: true,
         minify: true,
         dest: 'index.html'
-    })
+    }),
+    new ManifestPlugin()
   ],
 };

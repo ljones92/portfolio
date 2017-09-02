@@ -59,6 +59,7 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
+    "webpack-manifest-plugin": "^1.2.1",
     "webpack-plugin-critical": "^1.0.0"
   },
   "dependencies": {
@@ -68,6 +69,7 @@
     "react-hot-loader": "3.0.0-beta.6",
     "react-lazy-load": "^3.0.12",
     "react-particles-js": "^1.5.0",
+    "react-router-dom": "^4.2.2",
     "react-scrollable-anchor": "^0.4.2"
   }
 }

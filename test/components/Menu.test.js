@@ -37,6 +37,14 @@ describe('Component: Menu', () => {
     expect(wrapper.instance().state.scrolling).to.equal(true);
   });
 
+  it('should set scrollTop using document.documentElement.scrollTop if pageYOffset isn\'t set  ', () => {
+    const wrapper = mount(<Menu />);
+    window.pageYOffset = null;
+    document.documentElement.scrollTop = 200;
+    wrapper.instance().handleScroll();
+    expect(wrapper.instance().state.scrolling).to.equal(true);
+  });
+
   it('should set scrolling to false if scrollTop is less than 100', () => {
     const wrapper = mount(<Menu />);
     window.pageYOffset = 80;
