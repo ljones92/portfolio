@@ -7,7 +7,7 @@ const Title = () => (
         <ParticleCanvas height={window.innerWidth < 1200 ? '600px' : '800px'} />
         <div className='title__heading'>
             <h1>Laurence Jones</h1>
-            <span>Software Engineer</span>
+            <span>Software Consultant</span>
         </div>
     </div>
 );

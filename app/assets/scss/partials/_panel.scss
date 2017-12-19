@@ -67,6 +67,7 @@
     &__columns {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
 
         & > div {
             justify-content: center;
