@@ -9,10 +9,10 @@ const About = () => (
             <h3 className='panel__title'>About</h3>
         </ScrollableAnchor>
         <p className='panel__body'>
-            I am a Software Engineer currently working as a contractor at Infinity Works in Leeds. I work as a full-stack
-            developer but focus on back-end engineering and devops. As is the nature of software
-            development, my skills and interests are constantly evolving but the
-            technologies I am currently focused on include:
+            I am a Software Engineer currently working as a contractor at Infinity Works in Leeds.
+            I work as a full-stack developer but focus on back-end engineering and devops.
+            As is the nature of software development, my skills and interests are
+            constantly evolving but the technologies I am currently focused on include:
         </p>
         <ul className='panel__list panel__list--2'>
             <li className='panel__list--item'>PHP</li>
