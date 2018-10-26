@@ -1,6 +1,0 @@
-instrumentation:
-  root: app
-  include-all-sources: true
-  excludes: ["**/main.jsx"]
-reporting:
-  dir: "coverage"
