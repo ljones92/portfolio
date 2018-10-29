@@ -1,8 +1,0 @@
-node_modules
-dist
-package.json
-webpack.config.js
-webpack.production.config.js
-app/favicon.ico
-app/index.ejs
-app/sitemap.xml
